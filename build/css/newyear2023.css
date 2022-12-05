@@ -1887,10 +1887,9 @@ body {
 .newyear2023-hero__text {
   font-weight: 300;
   font-size: 55px;
-  line-height: 67px;
+  line-height: 50px;
   text-align: center;
   color: #FFF9AF;
-  text-transform: uppercase;
   margin: 0;
 }
 
