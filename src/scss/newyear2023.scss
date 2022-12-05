@@ -172,6 +172,9 @@ body{
 }
 
 @include r(1023){
+	.wrp {
+		padding-bottom: 52px;
+	}
 	.jq-selectbox{
 		width: 100%;
 		margin-top: 5px;
@@ -201,7 +204,7 @@ body{
 }
 @include r(767){
 	.wrp {
-		padding-bottom: 358px;
+		padding-bottom: 52px;
 	}
 	.jq-selectbox__dropdown{
 		position: fixed;

@@ -2008,6 +2008,7 @@ body {
 
 .newyear2023-block {
   margin-bottom: 105px;
+  overflow: hidden;
 }
 
 .newyear2023-block__header {
@@ -2030,8 +2031,27 @@ body {
   max-width: 1140px;
   padding: 0 20px;
   margin: 0 auto;
-  overflow: hidden;
   position: relative;
+}
+
+.newyear2023-block .swiper-button-prev,
+.newyear2023-block .swiper-button-next {
+  width: 25px;
+  height: 45px;
+  background-image: url("../img/arrow-slider.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.newyear2023-block .swiper-button-next {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.newyear2023-block .swiper-button-prev:after,
+.newyear2023-block .swiper-button-next:after {
+  display: none;
 }
 
 .newyear2023-block-item {

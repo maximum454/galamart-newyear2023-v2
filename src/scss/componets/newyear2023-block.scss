@@ -1,5 +1,6 @@
 .newyear2023-block{
   margin-bottom: 105px;
+  overflow: hidden;
   &__header{
     overflow: hidden;
     text-align: center;
@@ -18,8 +19,37 @@
     max-width: 1140px;
     padding: 0 20px;
     margin: 0 auto;
-    overflow: hidden;
     position: relative;
+  }
+  .swiper-wrapper{
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
+    width: 25px;
+    height: 45px;
+    background-image: url("../img/arrow-slider.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .swiper-button-next{
+    transform: rotate(180deg);
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after{
+    display: none;
+  }
+  @include r(767){
+    margin-bottom: 85px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    &__body{
+      padding: 0 5px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+      display: none;
+    }
   }
 }
 
