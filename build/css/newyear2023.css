@@ -2026,6 +2026,9 @@ body {
 
 .newyear2023-city__figure img {
   margin: 0 auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .newyear2023-city__content {
@@ -2333,10 +2336,7 @@ body {
 
   .newyear2023-city__figure {
     margin-bottom: 65px;
-  }
-
-  .newyear2023-city__figure img {
-    margin: 0 auto;
+    height: 53px;
   }
 
   .newyear2023-city__content {

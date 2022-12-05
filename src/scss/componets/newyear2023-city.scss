@@ -18,7 +18,9 @@
     margin: 0 0 42px;
     img{
       margin: 0 auto;
-    };
+      height: 100%;
+      object-fit: contain;
+    }
   }
   &__content{
     background: #6B0008;
@@ -50,9 +52,7 @@
     }
     &__figure{
       margin-bottom: 65px;
-      img{
-        margin: 0 auto;
-      };
+      height: 53px;
     }
     &__content{
       background: rgba(#6B0008,.5);
