@@ -2087,6 +2087,11 @@ body {
     line-height: 17px;
     padding: 16px 10px;
   }
+
+  .newyear2023-hero {
+    padding: 100px 20px 110px;
+    background-size: 170%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2215,5 +2220,26 @@ body {
     -webkit-transform: rotate(0) translate(-50%, 0);
         -ms-transform: rotate(0) translate(-50%, 0);
             transform: rotate(0) translate(-50%, 0);
+  }
+
+  .newyear2023-hero {
+    padding: 88px 20px 54px;
+    background-size: 230%;
+  }
+
+  .newyear2023-hero__body {
+    padding: 10px 20px;
+  }
+
+  .newyear2023-hero__text {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+@media only screen and (max-width: 389px) {
+  .newyear2023-hero__text {
+    font-size: 29px;
+    line-height: 36px;
   }
 }
