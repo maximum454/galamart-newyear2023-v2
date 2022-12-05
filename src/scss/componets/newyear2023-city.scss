@@ -15,7 +15,7 @@
     margin-bottom: 57px;
   }
   &__figure{
-    margin-bottom: 42px;
+    margin: 0 0 42px;
     img{
       margin: 0 auto;
     };
@@ -32,5 +32,34 @@
     text-transform: uppercase;
     color: #FEA143;
     margin: 0 0 57px;
+  }
+  @include r(767){
+    margin-bottom: 85px;
+    &__body{
+      max-width: 100%;
+      padding: 0;
+    }
+    &__title{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 52px;
+    }
+    &__figure{
+      margin-bottom: 65px;
+      img{
+        margin: 0 auto;
+      };
+    }
+    &__content{
+      background: rgba(#6B0008,.5);
+      padding: 27px 0 45px;
+      box-shadow: none;
+    }
+    &__content-title{
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 0 15px;
+    }
   }
 }
