@@ -1,25 +1,8 @@
 .newyear2023-content{
-  margin: 0 0 103px;
-
-  &.last{
-    position: relative;
-    padding-top: 232px;
-    &:before{
-      content: '';
-      position: absolute;
-      margin: 0 auto;
-      top: -222px;
-      left: 50%;
-      transform: translate(-50%,0);
-      background-image: url("../img/brr.png");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      width: 532px;
-      height: 483px;
-      pointer-events: none;
-      z-index: 10;
-    }
-  }
+  margin: 0 0 60px;
+  padding: 14px 0;
+  background: #6B0008;
+  box-shadow: 0 4px 4px #520107;
   &__body{
     max-width: 1140px;
     padding: 0 20px;
@@ -29,85 +12,12 @@
     gap: 20px;
     position: relative;
   }
-  &__text{
-    flex: 1 0;
-    max-width: 682px;
-    p{
-      font-family: 'Montserrat';
-      font-weight: 300;
-      font-size: 24px;
-      line-height: 29px;
-      color: #BCFFFB;
-      margin: 0 0 29px;
-    }
-  }
   &__title{
-    font-size: 40px;
-    line-height: 49px;
-    margin: 0 0 30px;
-    color: #BCFFFB;
-    font-weight: 300;
-  }
-
-  &__img{
-    flex: 1 0 370px;
-    max-width: 370px;
-  }
-  @include r(1023){
-    &__title{
-      font-size: 30px;
-      line-height: 39px;
-      margin: 0 0 10px;
-      color: #BCFFFB;
-    }
-    &__text{
-      p{
-        font-size: 18px;
-        line-height: 24px;
-      }
-    }
-    &__img{
-      flex: 1 0 300px;
-      max-width: 300px;
-    }
-  }
-  @include r(767){
-    &.last{
-      position: relative;
-      padding-top: 51px;
-      &:before{
-        content: '';
-        position: absolute;
-        margin: 0 auto;
-        top: -177px;
-        left: 50%;
-        transform: translate(-50%,0);
-        background-image: url("../img/brr.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 293px;
-        height: 226px;
-        pointer-events: none;
-        z-index: 10;
-      }
-    }
-    &__title{
-      font-size: 24px;
-      line-height: 30px;
-    }
-    &__text{
-      flex: 1 0 278px;
-      max-width: 278px;
-      p{
-        font-size: 14px;
-        line-height: 17px;
-        margin-bottom: 14px;
-      }
-    }
-    &__img{
-      flex: 1 0 200px;
-      max-width: 200px;
-      margin-left: -40px;
-    }
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF9AF;
   }
 }

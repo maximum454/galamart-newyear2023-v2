@@ -2,6 +2,7 @@
 @import "fonts";
 @import "./partials/formstyler";
 @import "./partials/formstyler.theme";
+@import "./partials/swiper-bundle";
 
 
 * {
@@ -29,7 +30,7 @@ body{
 .wrp {
 	position: relative;
 	font-family: $font1;
-	color: #BCFFFB;
+	color: #FFF9AF;
 	overflow: hidden;
 	background-image: url("../img/bg.jpg");
 	background-repeat:repeat;
@@ -96,10 +97,10 @@ body{
 }
 
 .jq-selectbox.focused .jq-selectbox__select{
-	border: 1px solid #0DBA6C;
+	border: 1px solid #FDB913;
 }
 .jq-selectbox__select{
-	border: 1px solid #0DBA6C;
+	border: 1px solid #FDB913;
 	background: transparent;
 	text-shadow: none;
 	box-shadow: none;
@@ -109,7 +110,9 @@ body{
 	font-family: 'Montserrat';
 	font-size: 24px;
 	line-height: 41px;
-	color: #BCFFFB;
+	color: #FEA143;
+	max-width: 652px;
+	width: 100%!important;
 	&:hover{
 		background: transparent;
 	}
@@ -120,10 +123,10 @@ body{
 }
 .jq-selectbox__select-text{
 	font-family: 'Montserrat';
-	font-weight: 300;
-	font-size: 24px;
+	font-weight: 400;
+	font-size: 20px;
 	line-height: 41px;
-	color: #BCFFFB;
+	color: #FEA143;
 	width: fit-content!important;
 	min-width: 200px;
 }
@@ -132,8 +135,8 @@ body{
 	&-arrow{
 		background-image: url("../img/select-arrow.svg");
 		background-size: 100%;
-		width: 23px;
-		height: 13px;
+		width: 27px;
+		height: 16px;
 		border: none;
 	}
 }
@@ -143,8 +146,8 @@ body{
 	box-shadow: none;
 	font-family: 'Montserrat';
 	border: none;
-	border-left: 1px solid #0DBA6C;
-	border-right: 1px solid #0DBA6C;
+	border-left: 1px solid #FDB913;
+	border-right: 1px solid #FDB913;
 	font-weight: 300;
 	font-size: 24px;
 	line-height: 29px;
@@ -157,14 +160,14 @@ body{
 	font-size: 24px;
 	line-height: 29px;
 	color: #0DBA6C;
-	border-bottom: 1px solid #0DBA6C;
+	border-bottom: 1px solid #FDB913;
 }
 .jq-selectbox li.selected {
 	background-color: rgba(19, 8, 28, 0.9);
 	color: #FFF;
 }
 .jq-selectbox li:hover{
-	background-color: #0DBA6C;
+	background-color: #6B0008;
 	color: #FFF;
 }
 
@@ -295,6 +298,7 @@ body{
 
 @import "componets/newyear2023-hero";
 @import "componets/newyear2023-content";
+@import "componets/newyear2023-city";
 @import "componets/newyear2023-block";
 @import "componets/newyear2023-block-item";
 

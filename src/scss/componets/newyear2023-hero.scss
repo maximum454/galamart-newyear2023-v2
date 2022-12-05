@@ -1,19 +1,10 @@
 .newyear2023-hero{
   position: relative;
-  padding: 79px 20px 0;
-  &:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url("../img/hero-decor.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 635px;
-    height: 429px;
-    pointer-events: none;
-    z-index: 10;
-  }
+  padding: 112px 20px 131px;
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   &__body{
     max-width: 684px;
     padding: 27px 20px;
