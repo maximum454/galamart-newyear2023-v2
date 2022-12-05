@@ -2095,6 +2095,10 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
+  .wrp {
+    padding-bottom: 52px;
+  }
+
   .jq-selectbox {
     width: 100%;
     margin-top: 5px;
@@ -2163,7 +2167,7 @@ body {
   }
 
   .wrp {
-    padding-bottom: 358px;
+    padding-bottom: 52px;
   }
 
   .jq-selectbox__dropdown {
@@ -2370,6 +2374,23 @@ body {
     font-size: 16px;
     line-height: 20px;
     margin: 0 0 15px;
+  }
+
+  .newyear2023-block {
+    margin-bottom: 85px;
+  }
+
+  .newyear2023-block:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .newyear2023-block__body {
+    padding: 0 5px;
+  }
+
+  .newyear2023-block .swiper-button-prev,
+  .newyear2023-block .swiper-button-next {
+    display: none;
   }
 }
 

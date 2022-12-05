@@ -1172,9 +1172,13 @@ const swiper = new Swiper('.swiper-block-item', {
             spaceBetween: 20
         },
         480: {
-            slidesPerView: 4,
+            slidesPerView: 3,
         },
         768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        1024: {
             slidesPerView: 5,
             spaceBetween: 30,
         }
