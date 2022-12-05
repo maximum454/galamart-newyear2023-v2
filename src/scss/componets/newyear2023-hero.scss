@@ -1,0 +1,37 @@
+.newyear2023-hero{
+  position: relative;
+  padding: 79px 20px 0;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../img/hero-decor.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 635px;
+    height: 429px;
+    pointer-events: none;
+    z-index: 10;
+  }
+  &__body{
+    max-width: 684px;
+    padding: 27px 20px;
+    margin: 0 auto;
+    background: #6B0008;
+    border: 1px solid #FFF9AF;
+    text-align: center;
+  }
+  &__figure{
+    margin: 0;
+  }
+  &__text{
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 67px;
+    text-align: center;
+    color: #FFF9AF;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}

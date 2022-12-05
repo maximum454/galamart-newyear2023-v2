@@ -1,0 +1,89 @@
+.newyear2023-block-item{
+  flex: 1 0 calc(25% - 20px);
+  max-width: 100%;
+  &.show{
+    display: block!important;
+  }
+  &__figure{
+    display: block;
+    background: linear-gradient(180deg, #191438 0%, #112A30 100%);
+    border-radius: 48px;
+    padding: 7px;
+    margin: 0 0 16px;
+    text-decoration: none!important;
+    img{
+      display: block;
+      width: 100%;
+      border-radius: 48px;
+    }
+  }
+  &__content{
+
+  }
+  &__name{
+    font-family: $font1;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #BCFFFB;
+    height: 35px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 0 0 8px;
+    text-decoration: none!important;
+  }
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  &__price{
+    font-family: $font1;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0DBA6C;
+    margin: 0;
+  }
+  .newyear2023-btn{
+    padding: 3px 23px 3px;
+    margin: 0;
+  }
+  @include r(767){
+    flex: 1 0 calc(50% - 20px);
+    &:nth-child(n+5){
+      display: none;
+    }
+    &__figure{
+
+      border-radius: 34px;
+      padding: 5px;
+      margin: 0 0 20px;
+      img{
+        border-radius: 34px;
+      }
+    }
+    &__name{
+      font-size: 12px;
+      line-height: 15px;
+      height: 44px;
+      -webkit-line-clamp: 3;
+      margin: 0 0 17px;
+    }
+    &__row{
+      justify-content: space-between;
+      gap: 10px;
+    }
+    &__price{
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .newyear2023-btn{
+      padding: 2px 30px 2px;
+      margin: 0;
+    }
+  }
+}
