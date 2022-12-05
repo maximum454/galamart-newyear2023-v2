@@ -105,14 +105,14 @@ body{
 	text-shadow: none;
 	box-shadow: none;
 	padding: 0 45px 0 11px;
-	height: 43px;
+	height: 60px;
 	border-radius: 0;
 	font-family: 'Montserrat';
 	font-size: 24px;
 	line-height: 41px;
 	color: #FEA143;
 	max-width: 652px;
-	width: 100%!important;
+	width: 652px;
 	&:hover{
 		background: transparent;
 	}
@@ -125,10 +125,11 @@ body{
 	font-family: 'Montserrat';
 	font-weight: 400;
 	font-size: 20px;
-	line-height: 41px;
+	line-height: 60px;
 	color: #FEA143;
 	width: fit-content!important;
 	min-width: 200px;
+	margin: 0 auto;
 }
 .jq-selectbox__trigger{
 	border: none;
@@ -138,11 +139,12 @@ body{
 		width: 27px;
 		height: 16px;
 		border: none;
+		top: 22px;
 	}
 }
 
 .jq-selectbox__dropdown{
-	background: rgba(19, 8, 28, 0.9);
+	background: #6B0008;
 	box-shadow: none;
 	font-family: 'Montserrat';
 	border: none;
@@ -153,147 +155,92 @@ body{
 	line-height: 29px;
 	color: #0DBA6C;
 	border-radius: 0;
+
+}
+.jq-selectbox__dropdown ul{
+	max-height: 360px;
+	overflow: auto;
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: #888;
+		background: linear-gradient(180deg, #FE8A27 -5.41%, #FEF4A2 110.77%);
+		border-radius: 100px;
+	}
 }
 .jq-selectbox li{
 	font-family: 'Montserrat';
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 29px;
-	color: #0DBA6C;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	padding: 18px;
+	color: #FEA143;
 	border-bottom: 1px solid #FDB913;
 }
 .jq-selectbox li.selected {
-	background-color: rgba(19, 8, 28, 0.9);
-	color: #FFF;
+	background-color: #520006;
+	color: #FEA143;
 }
 .jq-selectbox li:hover{
 	background-color: #6B0008;
-	color: #FFF;
+	color: #FEA143;
 }
 
 @include r(1023){
 	.wrp {
 		padding-bottom: 52px;
 	}
-	.jq-selectbox{
-		width: 100%;
-		margin-top: 5px;
-	}
-	.jq-selectbox.focused .jq-selectbox__select{
-		border: 1px solid #0DBA6C;
-	}
-	.jq-selectbox__select{
-		height: 40px;
-		font-size: 14px;
-		line-height: 17px;
-	}
-	.jq-selectbox__select-text{
-		font-size: 14px;
-		line-height: 39px;
-	}
 
-	.jq-selectbox__dropdown{
-		font-size: 14px;
-		line-height: 17px;
-	}
-	.jq-selectbox li{
-		font-size: 14px;
-		line-height: 17px;
-		padding: 16px 10px;
-	}
 }
 @include r(767){
 	.wrp {
 		padding-bottom: 52px;
 	}
+	.jq-selectbox{
+		width: 100%;
+	}
+	.jq-selectbox__select{
+		max-width: 652px;
+		width: 100%;
+		&:hover{
+			background: transparent;
+		}
+		&:active{
+			box-shadow: none;
+			background: transparent;
+		}
+	}
+	.jq-selectbox__select-text{
+		font-size: 14px;
+	}
+	.jq-selectbox__trigger{
+		border: none;
+		&-arrow{
+			width: 15px;
+			height: 8px;
+			top: 27px;
+			right: 16px;
+		}
+	}
 	.jq-selectbox__dropdown{
 		position: fixed;
 		z-index: 10;
-		margin: 0 -20px;
+		margin: 0;
 		bottom: 0!important;
 		top: auto!important;
 		border: none;
-		border-top: 1px solid #0DBA6C;
-		background: linear-gradient(180deg, #101D49 0%, #175854 100%) !important;
-		box-shadow: 0px -68px 57px rgba(24, 16, 41, 0.97);
+		border-top: 1px solid #FDB913;
+		background-color: #6B0008;
+		box-shadow: 0px -68px 57px rgba(#520107, 0.8);
 	}
 	.jq-selectbox li{
-		color: #BCFFFB;
+		font-size: 14px;
 		&.selected {
 			background-color: transparent;
-		}
-	}
-
-	.decor{
-		&.decor-1{
-			background-image: url("../img/brr-2-mobile.png");
-			width: 100px;
-			height: 317px;
-			top: 15.2%;
-			right: 0;
-		}
-		&.decor-2{
-			background-image: url("../img/brr-3-mobile.png");
-			width: 116px;
-			height: 435px;
-			top: 21%;
-			left: 0;
-			right: 0;
-			transform: rotate(0);
-		}
-		&.decor-3{
-			background-image: url("../img/brr-2-mobile.png");
-			width: 100px;
-			height: 317px;
-			top: 27.9%;
-			right: 0;
-			left: auto;
-			transform: rotate(0);
-		}
-		&.decor-4{
-			background-image: url("../img/brr-3-mobile.png");
-			width: 116px;
-			height: 435px;
-			top: 39%;
-			left: 0;
-			right: 0;
-			transform: rotate(0);
-		}
-		&.decor-5{
-			background-image: url("../img/brr-2-mobile.png");
-			width: 100px;
-			height: 317px;
-			top: 46%;
-			right: 0;
-			left: auto;
-			transform: rotate(0);
-		}
-		&.decor-6{
-			background-image: url("../img/brr-3-mobile.png");
-			width: 116px;
-			height: 435px;
-			top: 62%;
-			left: 0;
-			right: 0;
-			transform: rotate(0);
-		}
-		&.decor-7{
-			background-image: url("../img/brr-2-mobile.png");
-			width: 100px;
-			height: 317px;
-			top: 70%;
-			right: 0;
-			left: auto;
-			transform: rotate(0);
-		}
-		&.decor-8{
-			background-image: url("../img/brr-4-mobile.png");
-			width: 393px;
-			height: 451px;
-			top: auto;
-			bottom: 0;
-			left: 50%;
-			transform: rotate(0) translate(-50%,0);
 		}
 	}
 }
