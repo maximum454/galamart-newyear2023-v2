@@ -16,12 +16,13 @@
     }
   }
   &__body{
-    max-width: 1140px;
-    padding: 0 20px;
+    max-width: 1240px;
+    padding: 0 70px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
   }
-  .swiper-wrapper{
+  .swiper{
   }
   .swiper-button-prev,
   .swiper-button-next{
@@ -31,8 +32,12 @@
     background-size: 100%;
     background-repeat: no-repeat;
   }
+  .swiper-button-prev{
+    left: 10px;
+  }
   .swiper-button-next{
     transform: rotate(180deg);
+    right: 10px;
   }
   .swiper-button-prev:after,
   .swiper-button-next:after{
