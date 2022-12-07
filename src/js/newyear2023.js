@@ -15,28 +15,31 @@ setTimeout(function() {
     $('.js-select').styler();
 }, 100)
 
-const swiper = new Swiper('.swiper-block-item', {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 2,
-            spaceBetween: 20
+document.querySelectorAll('.newyear2023-block').forEach(n => {
+    console.log(n)
+    const swiper = new Swiper(n.querySelector('.swiper-block-item'), {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: n.querySelector('.swiper-button-next'),
+            prevEl: n.querySelector('.swiper-button-prev'),
         },
-        480: {
-            slidesPerView: 3,
-        },
-        768: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-        },
-        1024: {
-            slidesPerView: 5,
-            spaceBetween: 30,
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            480: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            }
         }
-    }
-})
+    })
+});
